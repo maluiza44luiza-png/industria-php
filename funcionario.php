@@ -2,12 +2,11 @@
 
 class Funcionario 
 {
-
-    private $id;
-    private $nome;
-    private $matricula;
-
-
+    public function __construct(
+        private int $id,
+        private string $nome,
+        private string $matricula
+    ) {}
 
     public function getId(): int 
     {
