@@ -2,12 +2,14 @@
 
 class Funcionario 
 {
+    // Construtor original com os três atributos privados
     public function __construct(
         private int $id,
         private string $nome,
         private string $matricula
     ) {}
 
+    // Métodos Getter e Setter para o ID
     public function getId(): int 
     {
         return $this->id;
@@ -18,6 +20,7 @@ class Funcionario
         $this->id = $id;
     }
 
+    // Métodos Getter e Setter para o Nome
     public function getNome(): string 
     {
         return $this->nome;
@@ -28,6 +31,7 @@ class Funcionario
         $this->nome = $nome;
     }
 
+    // Métodos Getter e Setter para a Matrícula
     public function getMatricula(): string 
     {
         return $this->matricula;

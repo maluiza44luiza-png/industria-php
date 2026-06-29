@@ -3,19 +3,19 @@
 class Produto 
 {
     public function __construct(
-        private int $codigo,
+        private int $id,
         private string $nome,
         private float $preco
     ) {}
 
-    public function getCodigo(): int 
+    public function getId(): int 
     {
-        return $this->codigo;
+        return $this->id;
     }
 
-    public function setCodigo(int $codigo): void 
+    public function setId(int $id): void 
     {
-        $this->codigo = $codigo;
+        $this->id = $id;
     }
 
     public function getNome(): string 
@@ -28,7 +28,6 @@ class Produto
         $this->nome = $nome;
     }
 
-    // Métodos Getter e Setter para Preço
     public function getPreco(): float 
     {
         return $this->preco;
